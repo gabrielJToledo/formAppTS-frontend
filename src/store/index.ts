@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit'
-
+import { configureStore, Store } from '@reduxjs/toolkit'
+import { FormsState } from './ducks/forms/types'
 import rootReducer from './ducks/rootReducer'
 
-const store = configureStore({
+export interface ApplicationState {
+    forms: FormsState
+}
+
+const store: Store<ApplicationState> = configureStore({
     reducer: rootReducer
 })
 
