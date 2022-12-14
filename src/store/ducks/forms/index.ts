@@ -12,13 +12,16 @@ const initialState: FormsState = {
 const reducer: Reducer<FormsState> = (state = initialState, action) => {
     switch (action.type) {
         case FormTypes.changedNameValue:
-            return { ...state, data: action.payload }
+            return { ...state, name: action.payload }
 
         case FormTypes.changedEmailValue:
-            return { ...state, data: action.payload}
+            return { ...state, email: action.payload}
 
         case FormTypes.changedTelValue:
-            return { ...state, data: action.payload}
+            return { ...state, tel: action.payload}
+
+        case FormTypes.updateDataDB:
+            return { ...state, dataDB: action.payload}
     
         default:
             return state

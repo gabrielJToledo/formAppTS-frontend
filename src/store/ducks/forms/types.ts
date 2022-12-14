@@ -2,5 +2,6 @@
 export enum FormTypes {
     changedNameValue = 'changedNameValue',
     changedEmailValue = 'changedEmailValue',
-    changedTelValue = 'changedTelValue'
+    changedTelValue = 'changedTelValue',
+    updateDataDB = 'updateDataDB'
 }
