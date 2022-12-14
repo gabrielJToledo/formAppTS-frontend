@@ -1,8 +1,12 @@
-import { FormsState, FormTypes } from "./types"
+import { FormTypes } from "./types"
 import { Reducer } from 'redux'
+import { FormsState } from "../../../domain/reduxInterface"
 
 const initialState: FormsState = {
-    data: []
+    dataDB: [],
+    name: '',
+    email: '',
+    tel: ''
 } 
 
 const reducer: Reducer<FormsState> = (state = initialState, action) => {
