@@ -12,3 +12,11 @@
     border: 1px solid rgb(133, 133, 133);
     border-radius: 5px;
 }
+
+.carousel-inner {
+    height: 100%;
+}
+
+.btn-custom {
+    width: 120px;
+}

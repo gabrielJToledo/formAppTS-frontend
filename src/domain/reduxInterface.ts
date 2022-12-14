@@ -1,5 +1,6 @@
 // Data Types
 export interface Form {
+    _id: any,
     name: string,
     email: string,
     tel: string
